@@ -1,0 +1,849 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap");
+body {
+  margin: 0;
+  background-image: url("images/background.png");
+  background-repeat: repeat-y;
+}
+
+header {
+  background-color: #17171A;
+}
+
+nav {
+  background-color: #202124;
+  padding: 0.3em;
+}
+nav .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-content: space-between;
+  padding: 0em 8.2em;
+}
+nav .container .boks1 {
+  margin-top: 0.4em;
+  width: 10%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+nav .container .boks1 img {
+  width: 30px;
+  margin-bottom: 0.7em;
+}
+nav .container .boks1 a {
+  color: #E6E6E6;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: "fjalla one", arial;
+  font-size: 1em;
+  margin: 0.7em 0 0 1.5em;
+  letter-spacing: 0.1em;
+}
+nav .container li {
+  display: inline;
+  list-style: none;
+  text-transform: uppercase;
+  font-family: "fjalla one", arial;
+}
+nav .container li a {
+  color: #E6E6E6;
+  text-decoration: none;
+  margin-left: 1.2em;
+  font-size: 1em;
+  letter-spacing: 0.1em;
+}
+
+.current {
+  border-bottom: #E6E6E6 solid 3px;
+  padding-bottom: 1.1em;
+}
+
+.logo {
+  width: 180px;
+  margin: 1em 0em 1em 7.8em;
+}
+
+.sektion-login {
+  padding: 0em 22.6em;
+}
+.sektion-login .boks {
+  background-color: #202124;
+  border: solid 2px #17171A;
+  margin: 8em 0em;
+  padding: 3em;
+  -webkit-box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.4);
+          box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.4);
+}
+.sektion-login .boks h1 {
+  font-family: "fjalla one", arial;
+  font-weight: 400;
+  color: #E6E6E6;
+  text-transform: uppercase;
+  font-size: 2.5em;
+  letter-spacing: 0.1em;
+  margin: 0;
+}
+.sektion-login .boks .container {
+  font-family: "roboto", arial;
+  font-size: 1.2em;
+  color: #E6E6E6;
+}
+.sektion-login .boks .container input[type=text], .sektion-login .boks .container input[type=password] {
+  margin: 0.8em 0;
+  width: 100%;
+  background-color: #A8AFBF;
+  font-family: "roboto", arial;
+  font-size: 1em;
+  padding: 1em 1em;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: none;
+}
+.sektion-login .boks .container input[type=submit] {
+  margin: 0.8em 0.5em 0.8em 0;
+  background-color: #34363B;
+  color: #E6E6E6;
+  font-family: "roboto", arial;
+  font-size: 1em;
+  padding: 0.7em 1em;
+  border: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: none;
+  cursor: pointer;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+.sektion-login .boks .container input[type=submit]:hover {
+  background-color: #484B52;
+}
+.sektion-login .boks .container ::-webkit-input-placeholder {
+  color: #1A1A1A;
+}
+.sektion-login .boks .container ::-moz-placeholder {
+  color: #1A1A1A;
+}
+.sektion-login .boks .container :-ms-input-placeholder {
+  color: #1A1A1A;
+}
+.sektion-login .boks .container ::-ms-input-placeholder {
+  color: #1A1A1A;
+}
+.sektion-login .boks .container ::placeholder {
+  color: #1A1A1A;
+}
+.sektion-login .boks .container2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: "roboto", arial;
+  font-size: 1.2em;
+  color: #E6E6E6;
+}
+.sektion-login .boks .container2 a {
+  text-decoration: none;
+  color: #E6E6E6;
+  padding: 0.7em 1em;
+  background-color: #34363B;
+  position: relative;
+  top: 1.5em;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+.sektion-login .boks .container2 a:hover {
+  background-color: #484B52;
+}
+.sektion-login .boks .container2 p {
+  width: 95%;
+}
+
+.sektion-tilmeld {
+  padding: 0em 22.6em;
+}
+.sektion-tilmeld .boks {
+  background-color: #202124;
+  border: solid 2px #17171A;
+  margin: 8em 0em;
+  padding: 3em;
+  -webkit-box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.4);
+          box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.4);
+}
+.sektion-tilmeld .boks h1 {
+  font-family: "fjalla one", arial;
+  font-weight: 400;
+  color: #E6E6E6;
+  text-transform: uppercase;
+  font-size: 2.5em;
+  letter-spacing: 0.1em;
+  margin: 0;
+}
+.sektion-tilmeld .boks .container {
+  font-family: "roboto", arial;
+  font-size: 1.2em;
+  color: #E6E6E6;
+}
+.sektion-tilmeld .boks .container input[type=text] {
+  margin: 0.8em 0;
+  width: 100%;
+  background-color: #A8AFBF;
+  font-family: "roboto", arial;
+  font-size: 1em;
+  padding: 1em 1em;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: none;
+}
+.sektion-tilmeld .boks .container input[type=submit] {
+  margin: 0.8em 0.5em 0.8em 0;
+  background-color: #34363B;
+  color: #E6E6E6;
+  font-family: "roboto", arial;
+  font-size: 1em;
+  padding: 0.7em 1em;
+  border: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: none;
+  cursor: pointer;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+.sektion-tilmeld .boks .container input[type=submit]:hover {
+  background-color: #484B52;
+}
+.sektion-tilmeld .boks .container ::-webkit-input-placeholder {
+  color: #1A1A1A;
+}
+.sektion-tilmeld .boks .container ::-moz-placeholder {
+  color: #1A1A1A;
+}
+.sektion-tilmeld .boks .container :-ms-input-placeholder {
+  color: #1A1A1A;
+}
+.sektion-tilmeld .boks .container ::-ms-input-placeholder {
+  color: #1A1A1A;
+}
+.sektion-tilmeld .boks .container ::placeholder {
+  color: #1A1A1A;
+}
+.sektion-tilmeld .boks .container2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: "roboto", arial;
+  font-size: 1.2em;
+  color: #E6E6E6;
+}
+.sektion-tilmeld .boks .container2 a {
+  text-decoration: none;
+  color: #E6E6E6;
+  padding: 0.7em 1em;
+  background-color: #34363B;
+  position: relative;
+  top: 1.5em;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+.sektion-tilmeld .boks .container2 a:hover {
+  background-color: #484B52;
+}
+.sektion-tilmeld .boks .container2 p {
+  width: 95%;
+}
+
+.sektion-populære-spil {
+  padding: 0em 15.5em;
+}
+.sektion-populære-spil .boks {
+  background-color: #202124;
+  border: solid 2px #17171A;
+  margin: 4em 0em 8em 0em;
+  padding: 3em;
+  -webkit-box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.4);
+          box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.4);
+  margin: 4em 0em 0.25em 0em;
+}
+.sektion-populære-spil .boks h1 {
+  font-family: "fjalla one", arial;
+  font-weight: 400;
+  color: #E6E6E6;
+  text-transform: uppercase;
+  font-size: 2.5em;
+  letter-spacing: 0.1em;
+  margin: 0;
+}
+.sektion-populære-spil .boks .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  font-family: "roboto", arial;
+  font-size: 1.2em;
+  color: #E6E6E6;
+}
+.sektion-populære-spil .boks .container a {
+  text-decoration: none;
+}
+.sektion-populære-spil .boks .container .thumbnail {
+  margin: 1em 0;
+  width: 11em;
+  position: relative;
+}
+.sektion-populære-spil .boks .container .thumbnail h2 {
+  font-family: "fjalla one", arial;
+  font-weight: 400;
+  color: #E6E6E6;
+  text-transform: uppercase;
+  font-size: 1em;
+  letter-spacing: 0.1em;
+  margin: 0;
+  background-color: #34363B;
+  padding: 0.5em;
+  position: relative;
+  bottom: 0.3em;
+}
+.sektion-populære-spil .boks .container .thumbnail a {
+  position: relative;
+  bottom: 0.3em;
+  text-decoration: none;
+}
+
+.sektion-nyheder-forside {
+  padding: 0em 15.5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.sektion-nyheder-forside .boks1 {
+  background-color: #202124;
+  border: solid 2px #17171A;
+  margin: 8em 0em;
+  padding: 3em;
+  -webkit-box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.4);
+          box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.4);
+  margin: 1em 1em 1em 0em;
+  width: 35%;
+}
+.sektion-nyheder-forside .boks1 h1 {
+  font-family: "fjalla one", arial;
+  font-weight: 400;
+  color: #E6E6E6;
+  text-transform: uppercase;
+  font-size: 2.5em;
+  letter-spacing: 0.1em;
+  margin: 0;
+}
+.sektion-nyheder-forside .boks1 .container {
+  font-family: "roboto", arial;
+  font-size: 1.2em;
+  color: #E6E6E6;
+}
+.sektion-nyheder-forside .boks2 {
+  background-color: #202124;
+  border: solid 2px #17171A;
+  margin: 8em 0em;
+  padding: 3em;
+  -webkit-box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.4);
+          box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.4);
+  margin: 1em 0em;
+  width: 60%;
+}
+.sektion-nyheder-forside .boks2 h1 {
+  font-family: "fjalla one", arial;
+  font-weight: 400;
+  color: #E6E6E6;
+  text-transform: uppercase;
+  font-size: 2.5em;
+  letter-spacing: 0.1em;
+  margin: 0;
+}
+.sektion-nyheder-forside .boks2 .container {
+  font-family: "roboto", arial;
+  font-size: 1.2em;
+  color: #E6E6E6;
+}
+
+.sektion-nye-spil {
+  padding: 0em 15.5em;
+}
+.sektion-nye-spil .boks {
+  background-color: #202124;
+  border: solid 2px #17171A;
+  margin: 8em 0em;
+  padding: 3em;
+  -webkit-box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.4);
+          box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.4);
+  margin: 0.25em 0em 8em 0em;
+}
+.sektion-nye-spil .boks h1 {
+  font-family: "fjalla one", arial;
+  font-weight: 400;
+  color: #E6E6E6;
+  text-transform: uppercase;
+  font-size: 2.5em;
+  letter-spacing: 0.1em;
+  margin: 0;
+}
+.sektion-nye-spil .boks .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  font-family: "roboto", arial;
+  font-size: 1.2em;
+  color: #E6E6E6;
+}
+.sektion-nye-spil .boks .container a {
+  text-decoration: none;
+}
+.sektion-nye-spil .boks .container .thumbnail {
+  margin: 1em 0;
+  width: 11em;
+  position: relative;
+}
+.sektion-nye-spil .boks .container .thumbnail h2 {
+  font-family: "fjalla one", arial;
+  font-weight: 400;
+  color: #E6E6E6;
+  text-transform: uppercase;
+  font-size: 1em;
+  letter-spacing: 0.1em;
+  margin: 0;
+  background-color: #34363B;
+  padding: 0.5em;
+  position: relative;
+  bottom: 0.3em;
+}
+.sektion-nye-spil .boks .container .thumbnail a {
+  position: relative;
+  bottom: 0.3em;
+  text-decoration: none;
+}
+
+.sektion-spil {
+  padding: 0em 15.5em;
+}
+.sektion-spil .boks {
+  background-color: #202124;
+  border: solid 2px #17171A;
+  margin: 4em 0em 8em 0em;
+  padding: 3em;
+  -webkit-box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.4);
+          box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.4);
+}
+.sektion-spil .boks h1 {
+  font-family: "fjalla one", arial;
+  font-weight: 400;
+  color: #E6E6E6;
+  text-transform: uppercase;
+  font-size: 2.5em;
+  letter-spacing: 0.1em;
+  margin: 0;
+}
+.sektion-spil .boks .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  font-family: "roboto", arial;
+  font-size: 1.2em;
+  color: #E6E6E6;
+}
+.sektion-spil .boks .container a {
+  text-decoration: none;
+}
+.sektion-spil .boks .container .thumbnail {
+  margin: 1em 0;
+  width: 11em;
+  position: relative;
+}
+.sektion-spil .boks .container .thumbnail h2 {
+  font-family: "fjalla one", arial;
+  font-weight: 400;
+  color: #E6E6E6;
+  text-transform: uppercase;
+  font-size: 1em;
+  letter-spacing: 0.1em;
+  margin: 0;
+  background-color: #34363B;
+  padding: 0.5em;
+  position: relative;
+  bottom: 0.3em;
+}
+.sektion-spil .boks .container .thumbnail a {
+  position: relative;
+  bottom: 0.3em;
+  text-decoration: none;
+}
+
+.sektion-nyheder {
+  padding: 0em 15.5em;
+}
+.sektion-nyheder .boks1 {
+  background-color: #202124;
+  border: solid 2px #17171A;
+  margin: 4em 0em 8em 0em;
+  padding: 3em;
+  -webkit-box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.4);
+          box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.4);
+  margin: 4em 0em 1em 0em;
+}
+.sektion-nyheder .boks1 h1 {
+  font-family: "fjalla one", arial;
+  font-weight: 400;
+  color: #E6E6E6;
+  text-transform: uppercase;
+  font-size: 2.5em;
+  letter-spacing: 0.1em;
+  margin: 0;
+}
+.sektion-nyheder .boks1 .container {
+  font-family: "roboto", arial;
+  font-size: 1.2em;
+  color: #E6E6E6;
+}
+.sektion-nyheder .boks2 {
+  background-color: #202124;
+  border: solid 2px #17171A;
+  margin: 4em 0em 8em 0em;
+  padding: 3em;
+  -webkit-box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.4);
+          box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.4);
+  margin: 0.25em 0em 8em 0em;
+}
+.sektion-nyheder .boks2 h1 {
+  font-family: "fjalla one", arial;
+  font-weight: 400;
+  color: #E6E6E6;
+  text-transform: uppercase;
+  font-size: 2.5em;
+  letter-spacing: 0.1em;
+  margin: 0;
+}
+.sektion-nyheder .boks2 .container {
+  font-family: "roboto", arial;
+  font-size: 1.2em;
+  color: #E6E6E6;
+}
+
+.sektion-spil-daemonjager {
+  padding: 0em 15.5em;
+}
+.sektion-spil-daemonjager .boks {
+  background-color: #202124;
+  border: solid 2px #17171A;
+  margin: 8em 0em;
+  padding: 3em;
+  -webkit-box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.4);
+          box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.4);
+  margin: 4em 0em 8em 0em;
+}
+.sektion-spil-daemonjager .boks h1 {
+  font-family: "fjalla one", arial;
+  font-weight: 400;
+  color: #E6E6E6;
+  text-transform: uppercase;
+  font-size: 2.5em;
+  letter-spacing: 0.1em;
+  margin: 0;
+}
+.sektion-spil-daemonjager .boks .container {
+  font-family: "roboto", arial;
+  font-size: 1.2em;
+  color: #E6E6E6;
+}
+.sektion-spil-daemonjager .boks .container canvas {
+  margin: 1em 0em;
+  border: solid 2px #17171A;
+}
+.sektion-spil-daemonjager .boks .container img, .sektion-spil-daemonjager .boks .container p {
+  margin: 1em 0;
+}
+.sektion-spil-daemonjager .boks .container a {
+  text-decoration: none;
+  color: #E6E6E6;
+  padding: 0.7em 1em;
+  background-color: #34363B;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+.sektion-spil-daemonjager .boks .container a:hover {
+  background-color: #484B52;
+}
+
+.sektion-succesfuld-tilmeldning {
+  padding: 0em 22.6em;
+}
+.sektion-succesfuld-tilmeldning .boks {
+  background-color: #202124;
+  border: solid 2px #17171A;
+  margin: 8em 0em;
+  padding: 3em;
+  -webkit-box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.4);
+          box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.4);
+  margin: 4em 0em 8em 0em;
+}
+.sektion-succesfuld-tilmeldning .boks h1 {
+  font-family: "fjalla one", arial;
+  font-weight: 400;
+  color: #E6E6E6;
+  text-transform: uppercase;
+  font-size: 2.5em;
+  letter-spacing: 0.1em;
+  margin: 0;
+}
+.sektion-succesfuld-tilmeldning .boks .container {
+  font-family: "roboto", arial;
+  font-size: 1.2em;
+  color: #E6E6E6;
+}
+.sektion-succesfuld-tilmeldning .boks .container a {
+  text-decoration: none;
+  color: #E6E6E6;
+  padding: 0.7em 1em;
+  background-color: #34363B;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+.sektion-succesfuld-tilmeldning .boks .container a:hover {
+  background-color: #484B52;
+}
+
+.sektion-404-link {
+  padding: 0em 15.5em;
+}
+.sektion-404-link .boks {
+  background-color: #202124;
+  border: solid 2px #17171A;
+  margin: 8em 0em;
+  padding: 3em;
+  -webkit-box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.4);
+          box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.4);
+  margin: 4em 0em 8em 0em;
+}
+.sektion-404-link .boks h1 {
+  font-family: "fjalla one", arial;
+  font-weight: 400;
+  color: #E6E6E6;
+  text-transform: uppercase;
+  font-size: 2.5em;
+  letter-spacing: 0.1em;
+  margin: 0;
+}
+.sektion-404-link .boks .container {
+  font-family: "roboto", arial;
+  font-size: 1.2em;
+  color: #E6E6E6;
+}
+.sektion-404-link .boks .container a {
+  text-decoration: none;
+  color: #E6E6E6;
+  padding: 0.7em 1em;
+  background-color: #34363B;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+.sektion-404-link .boks .container a:hover {
+  background-color: #484B52;
+}
+
+footer {
+  background-color: #17171A;
+  margin: 0;
+  padding: 2.5em 8.6em;
+}
+footer .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+footer .container ul {
+  padding: 0;
+}
+footer .container ul h4 {
+  font-family: "fjalla one", arial;
+  font-weight: 400;
+  color: #E6E6E6;
+  text-transform: uppercase;
+  font-size: 1.8em;
+  letter-spacing: 0.1em;
+  margin: 0;
+}
+footer .container ul li {
+  font-family: "roboto", arial;
+  color: #E6E6E6;
+  list-style: none;
+  font-size: 0.8em;
+  line-height: 2.5em;
+}
+footer .container img {
+  width: 45px;
+  margin-left: 1.5em;
+}
+
+.fadeTrans {
+  opacity: 1;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.fadeTrans:hover {
+  opacity: 0.65;
+}
+
+/* Media queries --------------------------------------- 
+--------------------------------------------------------*/
+@media (max-width: 1280px) {
+  .sektion-login, .sektion-tilmeld, .sektion-succesfuld-tilmeldning {
+    padding: 0em 15em;
+  }
+}
+@media (max-width: 1250px) {
+  .sektion-populære-spil, .sektion-nye-spil, .sektion-nyheder-forside, .sektion-spil, .sektion-nyheder {
+    padding: 0em 11em;
+  }
+  .sektion-populære-spil .boks .container .thumbnail, .sektion-nye-spil .boks .container .thumbnail, .sektion-nyheder-forside .boks .container .thumbnail, .sektion-spil .boks .container .thumbnail, .sektion-nyheder .boks .container .thumbnail {
+    width: 10em;
+  }
+
+  .sektion-spil-daemonjager canvas {
+    width: 23em;
+  }
+}
+@media (max-width: 1060px) {
+  .sektion-login, .sektion-tilmeld, .sektion-succesfuld-tilmeldning {
+    padding: 0em 10em;
+  }
+
+  .sektion-populære-spil, .sektion-nye-spil, .sektion-nyheder-forside, .sektion-spil, .sektion-nyheder, .sektion-spil-daemonjager {
+    padding: 0em 7em;
+  }
+}
+@media (max-width: 920px) {
+  .sektion-populære-spil, .sektion-nye-spil, .sektion-nyheder-forside, .sektion-spil, .sektion-spil-daemonjager, .sektion-nyheder {
+    padding: 0em 5em;
+  }
+}
+@media (max-width: 890px) {
+  .sektion-login, .sektion-tilmeld, .sektion-succesfuld-tilmeldning {
+    padding: 0em 5em;
+  }
+}
+@media (max-width: 850px) {
+  footer .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  footer ul {
+    margin: 2em 0em;
+  }
+  footer .sociale_medier {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 2em;
+  }
+
+  .sektion-populære-spil, .sektion-nye-spil, .sektion-spil, .sektion-spil-daemonjager, .sektion-nyheder {
+    padding: 0em 3em;
+  }
+
+  .sektion-nyheder-forside {
+    padding: 0em 3em;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .sektion-nyheder-forside .boks1 {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 1em 0em;
+  }
+  .sektion-nyheder-forside .boks2 {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 1em 0em;
+  }
+
+  nav .container {
+    padding: 0em 5em;
+  }
+}
+@media (max-width: 795px) {
+  .sektion-populære-spil .boks .container .thumbnail, .sektion-nye-spil .boks .container .thumbnail, .sektion-nyheder-forside .boks .container .thumbnail, .sektion-spil .boks .container .thumbnail {
+    width: 13em;
+  }
+
+  .sektion-spil-daemonjager canvas {
+    width: 20em;
+  }
+}
+@media (max-width: 725px) {
+  .sektion-populære-spil, .sektion-nye-spil, .sektion-nyheder-forside, .sektion-spil, .sektion-spil-daemonjager, .sektion-nyheder {
+    padding: 0em 2em;
+  }
+}
+@media (max-width: 710px) {
+  .sektion-login, .sektion-tilmeld, .sektion-succesfuld-tilmeldning {
+    padding: 0em 2em;
+  }
+}
+@media (max-width: 675px) {
+  .sektion-populære-spil, .sektion-nye-spil, .sektion-nyheder-forside, .sektion-spil, .sektion-spil-daemonjager, .sektion-nyheder {
+    padding: 0;
+  }
+
+  nav .container {
+    padding: 0em 3em;
+  }
+}
+@media (max-width: 630px) {
+  .sektion-login, .sektion-tilmeld, .sektion-succesfuld-tilmeldning {
+    padding: 0;
+  }
+
+  .sektion-populære-spil .boks .container, .sektion-nye-spil .boks .container, .sektion-spil .boks .container {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .sektion-populære-spil .boks .container .thumbnail, .sektion-nye-spil .boks .container .thumbnail, .sektion-spil .boks .container .thumbnail {
+    width: auto;
+  }
+
+  .logo {
+    width: auto;
+    margin: 1em 7.8em;
+  }
+}
