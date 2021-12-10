@@ -1,0 +1,293 @@
+//-------------------------------- mixins 
+
+
+@mixin bodyStyling{
+    margin: 0;
+    background-image: url('images/background.png');
+    background-repeat: repeat-y;
+}
+
+@mixin headerStyling{
+    background-color: #17171A;
+}
+
+@mixin logoStyling{
+    width: 180px;
+    margin: 1em 0em 1em 7.8em;
+}
+
+@mixin h1styling{
+    font-family: 'fjalla one', arial;
+    font-weight: 400;
+    color: #E6E6E6;
+    text-transform: uppercase;
+    font-size: 2.5em;
+    letter-spacing: 0.1em;
+    margin: 0;
+}
+
+@mixin h2styling {
+    font-family: 'fjalla one', arial;
+    font-weight: 400;
+    color: #E6E6E6;
+    text-transform: uppercase;
+    font-size: 1em;
+    letter-spacing: 0.1em;
+    margin: 0;
+    background-color: #34363B;
+    padding: 0.5em; 
+    position: relative;
+    bottom: 0.3em
+}
+
+@mixin h4styling{
+    font-family: 'fjalla one', arial;
+    font-weight: 400;
+    color: #E6E6E6;
+    text-transform: uppercase;
+    font-size: 1.8em;
+    letter-spacing: 0.1em;
+    margin: 0;
+}
+
+@mixin boxStyling{
+    background-color: #202124;
+    border: solid 2px #17171A;
+    margin: 8em 0em;
+    padding: 3em;
+    box-shadow: 5px 5px 7px rgb(0 0 0 / 0.4);
+}
+
+@mixin boxStyling2{
+    background-color: #202124;
+    border: solid 2px #17171A;
+    margin: 4em 0em 8em 0em;
+    padding: 3em;
+    box-shadow: 5px 5px 7px rgb(0 0 0 / 0.4);
+}
+
+@mixin paragrafStyling{
+    font-family: 'roboto', arial;
+    font-size: 1.2em;
+    color: #E6E6E6;
+}
+
+@mixin inputStyling1{
+    margin: 0.8em 0;
+    width: 100%;
+    background-color: #A8AFBF;
+    font-family: 'roboto', arial;
+    font-size: 1em;
+    padding: 1em 1em;
+    box-sizing: border-box;
+    outline: none;
+}
+
+@mixin inputStyling2{
+    margin: 0.8em 0.5em 0.8em 0;
+    background-color: #34363B;
+    color: #E6E6E6;
+    font-family: 'roboto', arial;
+    font-size: 1em;
+    padding: 0.7em 1em;
+    border: none;
+    box-sizing: border-box;
+    outline: none;
+    cursor: pointer;
+    transition: 0.2s;
+    &:hover{
+        background-color: #484B52;
+    }
+}
+
+@mixin inputStyling3{
+    width: 100%;
+    height: 10em;
+    background-color: #A8AFBF;
+    font-family: 'roboto', arial;
+    font-size: 1em;
+    padding: 1em 1em;
+    box-sizing: border-box;
+    outline: none;
+    resize: none;
+}
+
+@mixin footerStyling{
+    background-color: #17171A;
+    margin: 0;
+    padding: 2.5em 8.6em;
+}
+
+@mixin listStyling{
+    font-family: 'roboto', arial;
+    color: #E6E6E6;
+    list-style: none;
+    font-size: 0.8em;
+    line-height: 2.5em;
+}
+
+@mixin SoMeStyling{
+    width: 45px;
+    margin-left: 1.5em;
+}
+
+@mixin footContainer{
+    display: flex;
+    justify-content: space-between;
+}
+
+@mixin omOsStyling{
+    position: relative;
+    right: 18em;
+}
+
+@mixin buttonStyling{
+    text-decoration: none;
+    color: #E6E6E6;
+    padding: 0.7em 1em;
+    background-color: #34363B;
+    position: relative;
+    top: 1.5em;
+    transition: 0.2s;
+    &:hover{
+        background-color: #484B52;
+    }
+}
+
+@mixin buttonStyling2{
+    text-decoration: none;
+    color: #E6E6E6;
+    padding: 0.7em 1em;   
+    background-color: #34363B;
+    transition: 0.2s;
+    &:hover{
+        background-color: #484B52;
+    }
+}
+
+@mixin fadeTransition{
+        opacity: 1;
+        transition: 0.3s;
+        &:hover{
+            opacity: 0.65;
+        } 
+}
+
+
+
+
+@mixin navStyling{
+    background-color: #202124;
+    padding: 0.3em;
+}
+
+@mixin navListStyling{
+    list-style: none;
+    text-transform: uppercase;
+    font-family: 'fjalla one', arial;
+    
+}
+
+@mixin navAncStyling{
+    color:#E6E6E6;
+    text-decoration: none; 
+    margin-left: 1.2em;
+    font-size: 1em;
+    letter-spacing: 0.1em;
+}
+
+@mixin navContainer{
+    display: flex;
+    place-content: space-between;
+    // position: relative;
+    // right: 8.3em;
+    padding: 0em 8.2em;
+}
+
+@mixin navLogoutStyling{
+    color:#E6E6E6;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: 'fjalla one', arial;
+    font-size: 1em;
+    margin: 0.7em 0 0 1.5em;
+    letter-spacing: 0.1em;
+}
+
+
+
+@mixin currentStyling{
+    border-bottom:#E6E6E6 solid 3px;
+    padding-bottom: 1.1em ;
+}
+
+@mixin thumbnailStyling{
+    margin: 1em 0;
+    width: 11em;
+    position: relative;
+}
+
+@mixin thumbAncStyling{
+    position: relative;
+    bottom: 0.3em;
+    text-decoration: none;
+}
+
+@mixin canvasStyling{
+    margin: 1em 0em;
+    border: solid 2px #17171A;
+}
+
+
+@mixin wrapStyling{
+    display: $flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+} 
+
+@mixin profilbilledeStyling{
+    width: 30px;
+    margin-bottom: 0.7em;
+}
+
+
+
+//-------------------------------- variabler 
+
+$placeholderStyling: #1A1A1A;
+
+$standardPadding1: 0em 22.6em;
+
+$standardPadding2: 0em 15.5em;
+
+$standardMargin: 1em 0;
+
+$standardMargin2: 4em 0em 8em 0em;
+
+$tekstWidth: 95%;
+
+$flex: flex;
+
+$noUnderline: none;
+
+
+
+
+//------------------------------- query styling
+
+
+$queryPadding1: 0em 15em;
+
+$queryPadding2: 0em 11em;
+
+$queryPadding3: 0em 10em;
+
+$queryPadding4: 0em 7em;
+
+$queryPadding5: 0em 5em;
+
+$queryPadding6: 0em 3em;
+
+$queryPadding7: 0em 2em;
+
+$queryNoPadding: 0;

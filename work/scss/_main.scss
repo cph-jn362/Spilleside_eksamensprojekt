@@ -1,0 +1,487 @@
+body{
+    @include bodyStyling;
+}
+
+header{
+    @include headerStyling;
+}
+
+nav{
+    @include navStyling;  
+    .container{  
+        @include navContainer;
+        .boks1{
+            img{
+                @include profilbilledeStyling;
+            }
+            margin-top: 0.4em;
+            width: 10%;
+            display: inline-flex;
+            a{
+            @include navLogoutStyling;
+        }
+        }
+        li{
+            display: inline;
+            @include navListStyling;
+            a{
+                @include navAncStyling;
+                    
+            }
+        }
+    }  
+}
+
+.current{
+    @include currentStyling;
+}
+
+
+.logo{
+    @include logoStyling;
+}
+
+.sektion-login{
+    padding: $standardPadding1;
+    .boks{
+       @include boxStyling; 
+       h1{
+           @include h1styling;
+       }
+       .container{
+           @include paragrafStyling;
+           input[type=text], input[type=password]{
+               @include inputStyling1;
+           }
+           input[type=submit]{
+            @include inputStyling2;
+        }
+           ::placeholder{
+               color: $placeholderStyling;
+           }
+       }
+       .container2{
+           display: $flex;
+           @include paragrafStyling;
+           a{
+               @include buttonStyling;
+           }
+           p{
+               width: $tekstWidth;
+           }
+       }
+    }
+}
+
+.sektion-tilmeld{
+    padding: $standardPadding1;
+    .boks{
+       @include boxStyling; 
+       h1{
+           @include h1styling;
+       }
+       .container{
+           @include paragrafStyling;
+           input[type=text]{
+               @include inputStyling1;
+           }
+           input[type=submit]{
+            @include inputStyling2;
+        }
+           ::placeholder{
+               color: $placeholderStyling;
+           }
+       }
+       .container2{
+        display: $flex;
+        @include paragrafStyling;
+        a{
+            @include buttonStyling;
+        }
+        p{
+            width: $tekstWidth;
+        }
+    }
+    }
+    
+}
+
+.sektion-populære-spil{
+    padding: $standardPadding2;
+    .boks{
+       @include boxStyling2;
+       margin: 4em 0em 0.25em 0em;  
+       h1{
+           @include h1styling;
+       }
+       .container{
+        @include wrapStyling;
+        @include paragrafStyling;
+           a{
+               text-decoration: $noUnderline;
+           }
+
+           .thumbnail{
+               @include thumbnailStyling;
+               h2{
+                   @include h2styling;
+               }
+               a{
+                   @include thumbAncStyling;
+               }
+           }
+       }
+    }
+}
+
+.sektion-nyheder-forside{
+    padding: $standardPadding2;
+    display: $flex;
+    .boks1{
+        @include boxStyling;
+        margin: 1em 1em 1em 0em;
+        width: 35%;
+        h1{
+            @include h1styling;
+        }
+        .container{
+            @include paragrafStyling;
+        }
+    }
+    .boks2{
+        @include boxStyling;
+        margin: 1em 0em;
+        width: 60%;
+        h1{
+            @include h1styling;
+        }
+        .container{
+            @include paragrafStyling;
+        }
+    }
+}
+
+.sektion-nye-spil{
+    padding: $standardPadding2;
+    .boks{
+       @include boxStyling; 
+       margin: 0.25em 0em 8em 0em;
+       h1{
+           @include h1styling;
+       }
+       .container{
+        @include wrapStyling;
+            a{
+                text-decoration: $noUnderline;
+            }
+           @include paragrafStyling;
+           .thumbnail{
+               @include thumbnailStyling;
+               h2{
+                   @include h2styling;
+               }
+               a{
+                   @include thumbAncStyling;
+               }
+           }
+       }
+    }
+}
+
+
+.sektion-spil{
+    padding: $standardPadding2;
+    .boks{
+       @include boxStyling2; 
+       h1{
+           @include h1styling;
+       }
+       .container{
+        @include wrapStyling;
+           a{
+            text-decoration: $noUnderline;
+           }
+           @include paragrafStyling;
+           .thumbnail{
+               @include thumbnailStyling;
+               h2{
+                   @include h2styling;
+               }
+               a{
+                   @include thumbAncStyling;
+               }
+           }
+       }
+    }
+}
+
+.sektion-nyheder{
+    padding: $standardPadding2;
+    .boks1{
+       @include boxStyling2; 
+       margin: 4em 0em 1em 0em;  
+       h1{
+           @include h1styling;
+       }
+       .container{
+           @include paragrafStyling;
+       }
+    }
+    .boks2{
+        @include boxStyling2;
+        margin: 0.25em 0em 8em 0em;  
+        h1{
+            @include h1styling;
+        }
+        .container{
+            @include paragrafStyling;
+        }
+     }   
+}
+
+
+
+.sektion-spil-daemonjager{
+    padding: $standardPadding2;
+    .boks{
+       @include boxStyling; 
+       margin: $standardMargin2;
+       h1{
+           @include h1styling;
+       }
+       .container{
+           canvas{
+               @include canvasStyling;
+           }
+           @include paragrafStyling;
+           img, p{
+            margin: $standardMargin;
+           }
+           a{
+               @include buttonStyling2;
+           }   
+       }
+    }
+}
+
+.sektion-succesfuld-tilmeldning{
+    padding: $standardPadding1;
+    .boks{
+       @include boxStyling; 
+       margin: $standardMargin2;
+       h1{
+           @include h1styling;
+       }
+       .container{
+           @include paragrafStyling;  
+           a{
+            @include buttonStyling2;
+        }  
+       }
+    }
+}
+
+.sektion-404-link{
+    padding: $standardPadding2;
+    .boks{
+       @include boxStyling; 
+       margin: $standardMargin2;
+       h1{
+           @include h1styling;
+       }
+       .container{
+           @include paragrafStyling;  
+           a{
+            @include buttonStyling2;
+        }  
+       }
+    }
+}
+
+
+footer{
+    @include footerStyling;
+    .container{
+        @include footContainer;
+        ul{ 
+            padding: 0;
+            h4{
+                @include h4styling;
+            }
+            li{
+                @include listStyling;
+            }
+        }
+        img{
+            @include SoMeStyling;
+        }
+    }
+}
+
+
+.fadeTrans{
+    @include fadeTransition;
+}
+
+
+
+
+
+  /* Media queries --------------------------------------- 
+  --------------------------------------------------------*/
+
+    
+
+  
+
+  @media (max-width: 1280px){
+    .sektion-login, .sektion-tilmeld, .sektion-succesfuld-tilmeldning{
+        padding: $queryPadding1;
+    }
+  }
+
+  @media (max-width: 1250px){
+    .sektion-populære-spil, .sektion-nye-spil, .sektion-nyheder-forside, .sektion-spil, .sektion-nyheder{
+        padding: $queryPadding2;
+        .boks{
+            .container{
+                .thumbnail{
+                    width: 10em;
+                }
+            }
+        }
+    }
+    .sektion-spil-daemonjager{
+        canvas{
+            width: 23em;
+        }
+        }
+    }
+
+
+
+  @media (max-width: 1060px){
+    .sektion-login, .sektion-tilmeld, .sektion-succesfuld-tilmeldning{
+        padding: $queryPadding3;
+    }
+    .sektion-populære-spil, .sektion-nye-spil, .sektion-nyheder-forside, .sektion-spil, .sektion-nyheder, .sektion-spil-daemonjager{
+        padding: $queryPadding4;
+    }
+  }
+
+  @media (max-width: 920px){
+    .sektion-populære-spil, .sektion-nye-spil, .sektion-nyheder-forside, .sektion-spil, .sektion-spil-daemonjager, .sektion-nyheder{
+        padding: $queryPadding5;
+    }
+  }
+  
+  
+
+  @media (max-width: 890px){
+    .sektion-login, .sektion-tilmeld, .sektion-succesfuld-tilmeldning{
+        padding: $queryPadding5;
+    }
+  }
+  
+  @media (max-width: 850px){
+    footer{
+        .container{
+        flex-direction: column;
+        }
+        ul{
+            margin: 2em 0em;
+        }
+        .sociale_medier{
+            display: flex;
+            justify-content: center;
+            margin-top: 2em;
+        }
+    }
+    .sektion-populære-spil, .sektion-nye-spil, .sektion-spil, .sektion-spil-daemonjager, .sektion-nyheder{ 
+        padding: $queryPadding6;
+    }
+    .sektion-nyheder-forside{
+        padding: $queryPadding6;
+        flex-direction: column;
+        .boks1{
+            width: fit-content;
+            margin: 1em 0em;           
+        }
+        .boks2{
+            width: fit-content;
+            margin: 1em 0em;
+            
+        }
+        }
+    nav{
+       .container{
+           padding: $queryPadding5;
+       } 
+    }
+   }
+
+
+   @media (max-width: 795px){
+    .sektion-populære-spil, .sektion-nye-spil, .sektion-nyheder-forside, .sektion-spil{
+        .boks{
+            .container{
+                .thumbnail{
+                    width: 13em;
+                }
+            }
+        }
+    }
+    .sektion-spil-daemonjager{
+        canvas{
+            width: 20em;
+        }
+        }
+    }
+  
+
+  @media (max-width: 725px){
+    .sektion-populære-spil, .sektion-nye-spil, .sektion-nyheder-forside, .sektion-spil, .sektion-spil-daemonjager, .sektion-nyheder{
+        padding: $queryPadding7;
+    }
+  }
+
+  @media (max-width: 710px){
+    .sektion-login, .sektion-tilmeld, .sektion-succesfuld-tilmeldning{
+        padding: $queryPadding7;
+    }
+  }
+
+  @media (max-width: 675px){
+    .sektion-populære-spil, .sektion-nye-spil, .sektion-nyheder-forside, .sektion-spil, .sektion-spil-daemonjager, .sektion-nyheder{
+        padding: $queryNoPadding;
+    }
+    nav{
+        .container{
+            padding: $queryPadding6;
+        } 
+  }
+}
+
+
+  @media (max-width: 630px){
+    .sektion-login, .sektion-tilmeld, .sektion-succesfuld-tilmeldning{
+        padding: $queryNoPadding;
+    }
+    .sektion-populære-spil, .sektion-nye-spil, .sektion-spil{
+        .boks{
+            .container{
+                flex-wrap: nowrap;
+                flex-direction: column;
+                justify-content: center;
+                .thumbnail{
+                    width: auto;
+                }
+            }
+        }
+    }
+    .logo{
+        width: auto;
+        margin: 1em 7.8em;
+        
+    }
+}
